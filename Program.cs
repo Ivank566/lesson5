@@ -1,37 +1,78 @@
 ﻿using System;
 
-namespace lesson5
+namespace stars
 {
     class Program
     {
         static void Main(string[] args)
         {
-           
-            Console.WriteLine("vvedit' pershe chyslo:");
-            int a = int.Parse(Console.ReadLine());
-            Console.WriteLine("vvedit' druge chyslo:");
-            int b = int.Parse(Console.ReadLine());
-            Console.WriteLine("Сума чисел що знаходяться між ними");
-            int sum = 0;
-            for (int i= a +1; i<b; i++ )
-            {
-                Console.WriteLine(sum += i);
-            }
-            
+             
+             Console.WriteLine("Прямокутник");
+             for (int i=0; i<5; i++)
+             {
+                 for(int j=0; j<12; j++)
+                 {
 
-            Console.WriteLine("Введите первое число:");
-            int x = int.Parse(Console.ReadLine());
-            Console.WriteLine("Введите второе число:");
-            int y = int.Parse(Console.ReadLine());
-            Console.WriteLine("Непарні числа що знаходяться між ними:");
-            for(int j = x+1; j<y; j++)
+                     Console.Write("*");
+
+                 }
+                 Console.Write("\n");
+             }
+
+             Console.WriteLine("Прямокутний трикутник"); 
+             for(int q=0; q<10; q++)
+             {
+                 for(int w=0; w<q; w++)
+                 {
+                     Console.Write("*");
+                 }
+                 Console.Write("\n");
+             }
+
+            Console.WriteLine("Рiвностороннiй трикутник");
+
+            for (int y = 1; y < 5; y++)
             {
-                if (j % 2 != 0)
+                for (int x = 1 + y; x < 5; x++)
                 {
-                    Console.WriteLine(j);
+                    Console.Write(" ");
                 }
+                for (int x = 1; x < y*2; x++)
+                {
+                    Console.Write("*");
+                }
+                Console.Write("\n");
             }
+ 
+            Console.WriteLine("Ромб");
+            Console.WriteLine("");
+            for (int o = 1; o < 6; o++)
+            {
+                for (int v = 0+o; v < 6; v++)
+                {
+                    Console.Write(" ");
+                }
+                for (int v = 1; v < o*2; v++)
+                {
+                    Console.Write("*");
+                }
+                Console.Write("\n");
+            }
+            for (int o = 6; o >= 0; o--)
+            {
+                for (int v = 0 + o; v < 6; v++)
+                {
+                    Console.Write(" ");
+                }
+                for (int v = 1; v < o * 2; v++)
+                {
+                    Console.Write("*");
+                }
+                Console.Write("\n");
+            }
+
             Console.ReadKey();
-        }
+                }
+            
     }
 }
